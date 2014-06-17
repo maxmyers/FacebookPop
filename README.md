@@ -88,7 +88,11 @@
 
 
 ## Step 3 Look up at examples on how to set values
-
-
-
+##### Alpha - kPOPViewAlpha
+```objective-c
+ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
+ basicAniamtion.toValue= [UIColor redColor];
+ [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+  ```
 
