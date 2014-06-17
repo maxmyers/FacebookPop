@@ -7,13 +7,13 @@
 
 ## 1 Pick Kind of Animation
 
- ## Request 
+#### POPBasicAnimation
  ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.duration=3;
  ```
  
- POPSpringAnimation 
+ #### POPSpringAnimation 
   ```objective-c
   POPSpringAnimation *springAnimation = [POPSpringAnimation animation];
  springAnimation.velocity=@(1000);       // change of value units per second
