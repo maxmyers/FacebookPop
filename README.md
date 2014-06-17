@@ -14,7 +14,7 @@
  POPDecayAnimation
 
 
-
+```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.duration=3;
  
@@ -33,5 +33,5 @@
  POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
  decayAnimation.velocity=@(233); //change of value units per second
  decayAnimation.deceleration=.833; //range of 0 to 1
-
+```
 
