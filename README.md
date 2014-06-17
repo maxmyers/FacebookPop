@@ -1,31 +1,38 @@
 <h1>FacebookPop</h1>
 
 
-## 5 Steps For Facebook Pop
+## 5 Steps For Using Facebook Pop
 
 
 
-## Arrays
+## pragma mark 1 Pick Kind of Animation
 
-```js
-// Array
-var shoppingList = ["catfish", "water", "lemons"]
-shoppingList[1] = "bottle of water"               // update 
-shoppingList.count                                // size of array (3)
-shoppingList.append("eggs")
-shoppingList += "Milk"
+// POPBasicAnimation
 
-// Array slicing
-var fibList = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 5]
-fibList[4..6] // [3, 5]. Note: the end range value is exclusive
-fibList[1..fibList.endIndex] // all except first item
-// Subscripting returns the Slice type, instead of the Array type.
-// You may need to cast it to Array in order to satisfy the type checker
-Array(fibList[0..4])
+// POPSpringAnimation
 
-// Variants of creating an array. All three are equivalent.
-var emptyArray1 = String[]()
-var emptyArray2: String[] = []
-var emptyArray3: String[] = String[]()
-```
+// POPDecayAnimation
+
+
+/*
+ POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
+ basicAniamtion.duration=3;
+ */
+
+/*
+ 
+ POPSpringAnimation *springAnimation = [POPSpringAnimation animation];
+ springAnimation.velocity=@(1000);       // change of value units per second
+ springAnimation.springBounciness=14;    // value between 0-20 default at 4
+ springAnimation.springSpeed=3;     // value between 0-20 default at 4
+ 
+*/
+
+/*
+ 
+ POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
+ decayAnimation.velocity=@(233); //change of value units per second
+ decayAnimation.deceleration=.833; //range of 0 to 1
+*/
+
 
