@@ -26,11 +26,21 @@
 
 #### View Properties
 ##### ∙kPOPViewAlpha 
-##### ∙kPOPViewBackgroundColor kPOPViewBounds kPOPViewCenter kPOPViewFrame kPOPViewScaleXY kPOPViewSize
+##### ∙kPOPViewBackgroundColor 
+##### ∙kPOPViewBounds 
+##### ∙kPOPViewCenter 
+##### ∙kPOPViewFrame 
+##### ∙kPOPViewScaleXY 
+##### ∙kPOPViewSize
   
 #### Layer Properties
-```objective-c
- POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
- decayAnimation.velocity=@(233); //change of value units per second
- decayAnimation.deceleration=.833; //range of 0 to 1
-  ```
+##### ∙kPOPLayerBackgroundColor 
+##### ∙kPOPLayerBounds 
+##### ∙kPOPLayerScaleXY 
+##### ∙kPOPLayerSize 
+##### ∙kPOPLayerOpacity 
+##### ∙kPOPLayerPosition 
+##### ∙kPOPLayerPositionX 
+##### ∙kPOPLayerPositionY 
+##### ∙kPOPLayerRotation 
+##### ∙kPOPLayerBackgroundColor
