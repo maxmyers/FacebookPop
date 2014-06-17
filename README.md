@@ -88,13 +88,14 @@
 
 
 ## Step 3 Look up at examples on how to set values
-### View Properties
+#### Note: Property Changes work for all 3 animation types - POPBasicAnimation POPSpringAnimation POPDecayAnimation
 
+### View Properties
 ##### Alpha - kPOPViewAlpha
 ```objective-c
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewAlpha];
- basicAniamtion.toValue= @(0);
+ basicAniamtion.toValue= @(0); // scale from 0 to 1
   ```
   
 ##### Color - kPOPViewBackgroundColor
