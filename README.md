@@ -95,7 +95,6 @@
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewAlpha];
  basicAniamtion.toValue= @(0);
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Color - kPOPViewBackgroundColor
@@ -103,7 +102,6 @@
  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
  basicAniamtion.toValue= [UIColor redColor];
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Size - kPOPViewBounds
@@ -111,7 +109,6 @@
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewBounds];
  basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)]; //first 2 values dont matter
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Center - kPOPViewCenter
@@ -119,7 +116,6 @@
 POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewCenter];
  basicAniamtion.toValue=[NSValue valueWithCGPoint:CGPointMake(200, 200)];
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Location & Size - kPOPViewFrame
@@ -127,7 +123,6 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
  basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(140, 140, 140, 140)];
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Size - kPOPViewScaleXY
@@ -135,8 +130,6 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
 POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
  basicAniamtion.toValue=[NSValue valueWithCGSize:CGSizeMake(3, 2)];
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
-
   ```
   
 ##### Size(Scale) - kPOPViewSize
@@ -144,7 +137,6 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewSize];
  basicAniamtion.toValue=[NSValue valueWithCGSize:CGSizeMake(30, 200)];
- [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
 ### Layer Properties 
 ##### Color - kPOPLayerBackgroundColor
@@ -152,7 +144,6 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
   POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
  basicAniamtion.toValue= [UIColor redColor];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Size - kPOPLayerBounds
@@ -160,7 +151,6 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
 POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBounds];
  basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(0, 0, 90, 90)]; //first 2 values dont matter
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Size - kPOPLayerScaleXY
@@ -168,7 +158,6 @@ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerScaleXY];
  basicAniamtion.toValue= [NSValue valueWithCGSize:CGSizeMake(2, 1)];//increases width and height scales
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Size - kPOPLayerSize
