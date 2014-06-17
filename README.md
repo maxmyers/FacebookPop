@@ -2,11 +2,10 @@
 
 ## Step 1 Pick Kind of Animation
 
-### ex
+### Example
 ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
   ```
-
 ### POPBasicAnimation
  ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
