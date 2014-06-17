@@ -23,3 +23,13 @@
   ```
 
 ## Step 2 Decide weather you will animate a view property or layer property
+
+#### View Properties
+kPOPViewAlpha kPOPViewBackgroundColor kPOPViewBounds kPOPViewCenter kPOPViewFrame kPOPViewScaleXY kPOPViewSize
+  
+#### Layer Properties
+```objective-c
+ POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
+ decayAnimation.velocity=@(233); //change of value units per second
+ decayAnimation.deceleration=.833; //range of 0 to 1
+  ```
