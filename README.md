@@ -26,13 +26,14 @@
 
 ### View Properties
 
-##### kPOPViewAlpha 
-##### kPOPViewBackgroundColor 
-##### kPOPViewBounds 
-##### kPOPViewCenter 
-##### kPOPViewFrame 
-##### kPOPViewScaleXY 
-##### kPOPViewSize
+
+##### Alpha - kPOPViewAlpha
+##### Color - kPOPViewBackgroundColor
+##### Size - kPOPViewBounds
+##### Center - kPOPViewCenter 
+##### Location & Size - kPOPViewFrame
+##### Size - kPOPViewScaleXY
+##### Size(Scale) - kPOPViewSize
 
 
 ### Layer Properties
