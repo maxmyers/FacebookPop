@@ -22,4 +22,4 @@
  decayAnimation.deceleration=.833; //range of 0 to 1
   ```
 
-
+## Step 2 Decide weather you will animate a view property or layer property
