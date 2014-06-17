@@ -2,10 +2,7 @@
 
 ## Step 1 Pick Kind of Animation
 
-### Example
-```objective-c
- POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
-  ```
+
 ### POPBasicAnimation
  ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
@@ -24,6 +21,10 @@
  POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
  decayAnimation.velocity=@(233); //change of value units per second
  decayAnimation.deceleration=.833; //range of 0 to 1
+  ```
+### Example
+```objective-c
+ POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
   ```
 
 ## Step 2 Decide weather you will animate a view property or layer property
