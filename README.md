@@ -2,20 +2,20 @@
 
 ## Step 1 Pick Kind of Animation
 
-#### POPBasicAnimation
+### POPBasicAnimation
  ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.duration=3;
  ```
  
-#### POPSpringAnimation
+### POPSpringAnimation
   ```objective-c
   POPSpringAnimation *springAnimation = [POPSpringAnimation animation];
  springAnimation.velocity=@(1000);       // change of value units per second
  springAnimation.springBounciness=14;    // value between 0-20 default at 4
  springAnimation.springSpeed=3;     // value between 0-20 default at 4
   ```
-#### POPDecayAnimation
+### POPDecayAnimation
 ```objective-c
  POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
  decayAnimation.velocity=@(233); //change of value units per second
