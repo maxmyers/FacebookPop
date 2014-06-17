@@ -88,7 +88,7 @@
 
 
 ## Step 3 Look up at examples on how to set values
-#### Note: Property Changes work for all 3 animation types - POPBasicAnimation POPSpringAnimation POPDecayAnimation
+
 
 ### View Properties
 ##### Alpha - kPOPViewAlpha
@@ -166,7 +166,6 @@ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPLayerSize];
  basicAniamtion.toValue= [NSValue valueWithCGSize:CGSizeMake(200, 200)];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Opacity - kPOPLayerOpacity
@@ -174,7 +173,6 @@ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerOpacity];
  basicAniamtion.toValue = @(0);
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Position - kPOPLayerPosition
@@ -182,7 +180,6 @@ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
 POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
 basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerPosition];
 basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//last 2 values dont matter
-[self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### X Position - kPOPLayerPositionX
@@ -190,7 +187,6 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerPositionX];
  basicAniamtion.toValue= @(240);
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Y Position - kPOPLayerPositionY
@@ -198,7 +194,6 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
  POPSpringAnimation *anim = [POPSpringAnimation animation];
  anim.property=[POPAnimatableProperty propertyWithName:kPOPLayerPositionY];
  anim.toValue = @(320);
- [self.view1 pop_addAnimation:anim forKey:@"WhatEverNameYouWant"];
   ```
   
 ##### Rotation - kPOPLayerRotation
@@ -206,9 +201,15 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerRotation];
  basicAniamtion.toValue= @(M_PI/4); //2 M_PI is an entire rotation
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
-
+#### Note: Property Changes work for all 3 animation types - POPBasicAnimation POPSpringAnimation POPDecayAnimation
+### Example
+```objective-c
+  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerRotation];
+ basicAniamtion.toValue= @(M_PI/4); //2 M_PI is an entire rotation
+ [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+  ```
 ## Step 4 Create Name For Animation
 ```objective-c
 basicAniamtion.name=@"WhatEverAnimationNameYouWant";
@@ -219,6 +220,7 @@ basicAniamtion.name=@"WhatEverAnimationNameYouWant";
     basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
     basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
     basicAniamtion.name=@"WhatEverAnimationNameYouWant";
+    [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
 
 ## Step 5 Add animation to View
