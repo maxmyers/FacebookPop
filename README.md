@@ -88,6 +88,8 @@
 
 
 ## Step 3 Look up at examples on how to set values
+### View Properties
+
 ##### Alpha - kPOPViewAlpha
 ```objective-c
  POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
@@ -104,46 +106,47 @@
  [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
-##### Color - kPOPViewBackgroundColor
+##### Size - kPOPViewBounds
 ```objective-c
- POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
- basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
- basicAniamtion.toValue= [UIColor redColor];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewBounds];
+ basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)]; //first 2 values dont matter
+ [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
-##### Color - kPOPViewBackgroundColor
+##### Center - kPOPViewCenter
 ```objective-c
- POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
- basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
- basicAniamtion.toValue= [UIColor redColor];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewCenter];
+ basicAniamtion.toValue=[NSValue valueWithCGPoint:CGPointMake(200, 200)];
+ [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
-##### Color - kPOPViewBackgroundColor
+##### Location & Size - kPOPViewFrame
 ```objective-c
- POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
- basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
- basicAniamtion.toValue= [UIColor redColor];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
+ basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(140, 140, 140, 140)];
+ [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
   
-##### Color - kPOPViewBackgroundColor
+##### Size - kPOPViewScaleXY
 ```objective-c
- POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
- basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
- basicAniamtion.toValue= [UIColor redColor];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
+ basicAniamtion.toValue=[NSValue valueWithCGSize:CGSizeMake(3, 2)];
+ [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+
   ```
   
-##### Color - kPOPViewBackgroundColor
+##### Size(Scale) - kPOPViewSize
 ```objective-c
- POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
- basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
- basicAniamtion.toValue= [UIColor redColor];
- [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
+ basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewSize];
+ basicAniamtion.toValue=[NSValue valueWithCGSize:CGSizeMake(30, 200)];
+ [self.view1 pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
-  
+### Layer Properties 
 ##### Color - kPOPViewBackgroundColor
 ```objective-c
  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
