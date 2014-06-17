@@ -7,7 +7,7 @@
 
 ## 1 Pick Kind of Animation
 
- POPBasicAnimation 
+ #### `POPBasicAnimation` Request 
  ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.duration=3;
