@@ -22,7 +22,7 @@
   ```
  POPDecayAnimation
 
-#### `GET` Request
+#### Request
 ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.duration=3;
