@@ -52,8 +52,6 @@
 ## Step 2 Decide weather you will animate a view property or layer property
 
 ### View Properties
-
-
 ##### Alpha - kPOPViewAlpha
 ##### Color - kPOPViewBackgroundColor
 ##### Size - kPOPViewBounds
@@ -74,3 +72,23 @@
 ##### kPOPLayerPositionY 
 ##### kPOPLayerRotation 
 ##### kPOPLayerBackgroundColor
+
+### Example
+```objective-c
+ POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
+  ```
+
+
+
+
+
+
+
+
+
+
+## Step 3 Look up at examples on how to set values
+
+
+
+
