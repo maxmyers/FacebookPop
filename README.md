@@ -62,16 +62,16 @@
 
 
 ### Layer Properties
-##### kPOPLayerBackgroundColor 
-##### kPOPLayerBounds 
-##### kPOPLayerScaleXY 
-##### kPOPLayerSize 
-##### kPOPLayerOpacity 
-##### kPOPLayerPosition 
-##### kPOPLayerPositionX 
-##### kPOPLayerPositionY 
-##### kPOPLayerRotation 
-##### kPOPLayerBackgroundColor
+##### Color - kPOPLayerBackgroundColor 
+##### Size - kPOPLayerBounds 
+##### Size - kPOPLayerScaleXY
+##### Size - kPOPLayerSize 
+##### Opacity - kPOPLayerOpacity
+##### Position - kPOPLayerPosition 
+##### X Position - kPOPLayerPositionX 
+##### Y Position - kPOPLayerPositionY
+##### Rotation - kPOPLayerRotation
+##### Color - kPOPLayerBackgroundColor
 
 ### Example
 ```objective-c
