@@ -26,13 +26,13 @@
 
 #### View Properties
 ```objective-c
-kPOPViewAlpha 
-kPOPViewBackgroundColor 
-kPOPViewBounds 
-kPOPViewCenter 
-kPOPViewFrame 
-kPOPViewScaleXY 
-kPOPViewSize
+##### ∙kPOPViewAlpha 
+##### ∙kPOPViewBackgroundColor 
+##### ∙kPOPViewBounds 
+##### ∙kPOPViewCenter 
+##### ∙kPOPViewFrame 
+##### ∙kPOPViewScaleXY 
+##### ∙kPOPViewSize
 ```
 #### Layer Properties
 ##### ∙kPOPLayerBackgroundColor 
