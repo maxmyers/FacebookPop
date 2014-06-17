@@ -1,17 +1,7 @@
 FacebookPop
-===========
 
-<p align="center">
-  <img src="./img/swift-hero.png" alt="Bird">
-  <br>
-  <img src="./img/swift-text.png" alt="Swift" width="160px">
-  <br>
-</p>
-<p align="center">A short guide to using Apple's new programming language, Swift.</p>
 
-<p align="center"><strong>NEW: </strong>Read the guide at <a href="http://git.io/swift">git.io/swift</a></p>
-
-## Basics
+## 5 Steps For Facebook Pop
 
 
 
