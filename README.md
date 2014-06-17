@@ -25,7 +25,7 @@
 ## Step 2 Decide weather you will animate a view property or layer property
 
 #### View Properties
-```objective-c
+
 ##### ∙kPOPViewAlpha 
 ##### ∙kPOPViewBackgroundColor 
 ##### ∙kPOPViewBounds 
@@ -33,7 +33,8 @@
 ##### ∙kPOPViewFrame 
 ##### ∙kPOPViewScaleXY 
 ##### ∙kPOPViewSize
-```
+
+
 #### Layer Properties
 ##### ∙kPOPLayerBackgroundColor 
 ##### ∙kPOPLayerBounds 
