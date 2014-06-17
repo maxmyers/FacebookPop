@@ -7,11 +7,7 @@
 
 ## pragma mark 1 Pick Kind of Animation
 
-// POPBasicAnimation
-
-// POPSpringAnimation
-
-// POPDecayAnimation
+ POPBasicAnimation POPSpringAnimation POPDecayAnimation
 
 
 /*
