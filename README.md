@@ -25,14 +25,15 @@
 ## Step 2 Decide weather you will animate a view property or layer property
 
 #### View Properties
-  ##### ∙kPOPViewAlpha 
+<center>
+##### ∙kPOPViewAlpha 
 ##### ∙kPOPViewBackgroundColor 
 ##### ∙kPOPViewBounds 
 ##### ∙kPOPViewCenter 
 ##### ∙kPOPViewFrame 
 ##### ∙kPOPViewScaleXY 
 ##### ∙kPOPViewSize
-  
+ </center>
 #### Layer Properties
 ##### ∙kPOPLayerBackgroundColor 
 ##### ∙kPOPLayerBounds 
