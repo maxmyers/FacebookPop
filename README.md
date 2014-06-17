@@ -26,23 +26,23 @@
 
 ### View Properties
 
-##### ∙kPOPViewAlpha 
-##### ∙kPOPViewBackgroundColor 
-##### ∙kPOPViewBounds 
-##### ∙kPOPViewCenter 
-##### ∙kPOPViewFrame 
-##### ∙kPOPViewScaleXY 
-##### ∙kPOPViewSize
+##### kPOPViewAlpha 
+##### kPOPViewBackgroundColor 
+##### kPOPViewBounds 
+##### kPOPViewCenter 
+##### kPOPViewFrame 
+##### kPOPViewScaleXY 
+##### kPOPViewSize
 
 
 ### Layer Properties
-##### ∙kPOPLayerBackgroundColor 
-##### ∙kPOPLayerBounds 
-##### ∙kPOPLayerScaleXY 
-##### ∙kPOPLayerSize 
-##### ∙kPOPLayerOpacity 
-##### ∙kPOPLayerPosition 
-##### ∙kPOPLayerPositionX 
-##### ∙kPOPLayerPositionY 
-##### ∙kPOPLayerRotation 
-##### ∙kPOPLayerBackgroundColor
+##### kPOPLayerBackgroundColor 
+##### kPOPLayerBounds 
+##### kPOPLayerScaleXY 
+##### kPOPLayerSize 
+##### kPOPLayerOpacity 
+##### kPOPLayerPosition 
+##### kPOPLayerPositionX 
+##### kPOPLayerPositionY 
+##### kPOPLayerRotation 
+##### kPOPLayerBackgroundColor
