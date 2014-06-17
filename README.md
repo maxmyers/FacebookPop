@@ -304,7 +304,7 @@ basicAniamtion.name=@"hiiidd";
 
 ## Step 5 Add animation to View
 ```objective-c
-basicAniamtion.name=@"hiiidd";
+   [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
 ### Example
 ```objective-c
@@ -312,6 +312,7 @@ basicAniamtion.name=@"hiiidd";
     basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
     basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
     basicAniamtion.name=@"hiiidd";
+   [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
 
 
