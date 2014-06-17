@@ -290,4 +290,28 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
  basicAniamtion.toValue= [UIColor redColor];
  [self.view1.layer pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
+## Step 4 Create Name For Animation
+```objective-c
+basicAniamtion.name=@"hiiidd";
+  ```
+### Example
+```objective-c
+    POPSpringAnimation *basicAniamtion = [POPSpringAnimation animation];
+    basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
+    basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
+    basicAniamtion.name=@"hiiidd";
+  ```
+
+## Step 5 Add animation to View
+```objective-c
+basicAniamtion.name=@"hiiidd";
+  ```
+### Example
+```objective-c
+    POPSpringAnimation *basicAniamtion = [POPSpringAnimation animation];
+    basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
+    basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
+    basicAniamtion.name=@"hiiidd";
+  ```
+
 
