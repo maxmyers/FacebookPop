@@ -211,10 +211,21 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
  basicAniamtion.toValue= @(M_PI/4); //2 M_PI is an entire rotation
  [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
-## Step 4 Create Name For Animation
+## Step 4 Create Name & Delegte For Animation
 ```objective-c
 basicAniamtion.name=@"WhatEverAnimationNameYouWant";
   ```
+### Delegate Methods
+```objective-c
+<POPAnimatorDelegate>
+```
+```objective-c
+- (void)animatorWillAnimate:(POPAnimator *)animator;
+```
+```objective-c
+- (void)animatorDidAnimate:(POPAnimator *)animator;
+```
+
 ### Example
 ```objective-c
     POPSpringAnimation *basicAniamtion = [POPSpringAnimation animation];
