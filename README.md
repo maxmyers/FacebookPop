@@ -14,8 +14,9 @@
     //  anim.toValue =  [NSValue valueWithCGSize:CGSizeMake(40, 40)];
     basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
   
-    // 4. Create Name For Animation
+    // 4. Create Name For Animation & Set Delegate
      basicAniamtion.name=@"hiiidd";
+     basicAnimation.delegate=self
     
     // 5. Add animation to View or Layer, we picked View so self.tableView and not layer which would have been self.tableView.layer
     [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
@@ -27,7 +28,7 @@
 
 ### POPBasicAnimation
  ```objective-c
- POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
+POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
 basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]; 
 // kCAMediaTimingFunctionLinear  kCAMediaTimingFunctionEaseIn  kCAMediaTimingFunctionEaseOut  kCAMediaTimingFunctionEaseInEaseOut
  ```
@@ -78,8 +79,7 @@ basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTi
 ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
   ```
-
-
+#### Note: Works on any Layer property or any object that inherits from UIView such as UIToolbar | UIPickerView | UIDatePicker | UIScrollView |  UITextView | UIImageView | UITableViewCell | UIStepper | UIProgressView | UIActivityIndicatorView | UISwitch | UISlider | UITextField | UISegmentedControl | UIButton | UIView | UITableView
 
 
 
