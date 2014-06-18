@@ -209,7 +209,6 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerRotation];
  basicAniamtion.toValue= @(M_PI/4); //2 M_PI is an entire rotation
- [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
 ## Step 4 Create Name & Delegate For Animation
 ```objective-c
