@@ -34,7 +34,7 @@ basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTi
  
 ### POPSpringAnimation
   ```objective-c
-  POPSpringAnimation *springAnimation = [POPSpringAnimation animation];
+ POPSpringAnimation *springAnimation = [POPSpringAnimation animation];
  springAnimation.velocity=@(1000);       // change of value units per second
  springAnimation.springBounciness=14;    // value between 0-20 default at 4
  springAnimation.springSpeed=3;     // value between 0-20 default at 4
