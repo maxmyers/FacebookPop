@@ -216,7 +216,7 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
 basicAniamtion.name=@"WhatEverAnimationNameYouWant";
   ```
 ### Delegate Methods
-`objective-c
+`
 <POPAnimatorDelegate>
 `
 ```objective-c
