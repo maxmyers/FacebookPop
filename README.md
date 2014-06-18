@@ -29,7 +29,7 @@
  ```objective-c
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
 basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]; 
-// Other options include kCAMediaTimingFunctionEaseIn  kCAMediaTimingFunctionEaseOut  kCAMediaTimingFunctionEaseInEaseOut
+// kCAMediaTimingFunctionLinear  kCAMediaTimingFunctionEaseIn  kCAMediaTimingFunctionEaseOut  kCAMediaTimingFunctionEaseInEaseOut
  ```
  
 ### POPSpringAnimation
