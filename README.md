@@ -88,7 +88,7 @@ basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTi
 
 
 
-## Step 3 Look up at examples on how to set values
+## Step 3 Look Below at examples on how to set values
 
 
 ### View Properties
