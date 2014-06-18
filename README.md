@@ -88,7 +88,7 @@ basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTi
 
 
 
-## Step 3 Look Below at examples on how to set values
+## Step 3 Find your property below then add and set .toValue
 
 
 ### View Properties
@@ -232,7 +232,7 @@ basicAniamtion.name=@"WhatEverAnimationNameYouWant";
     basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
     basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
     basicAniamtion.name=@"WhatEverAnimationNameYouWant";
-    [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+    basicAnimation.delegate=self;
   ```
 
 ## Step 5 Add animation to View
@@ -245,7 +245,8 @@ basicAniamtion.name=@"WhatEverAnimationNameYouWant";
     basicAniamtion.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
     basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
     basicAniamtion.name=@"hiiidd";
-   [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
+    basicAnimation.delegate=self;
+    [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
   ```
 
 
