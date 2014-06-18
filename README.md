@@ -15,7 +15,7 @@
     basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
   
     // 4. Create Name For Animation & Set Delegate
-     basicAniamtion.name=@"hiiidd";
+     basicAniamtion.name=@"AnyAnimationNameYouWant";
      basicAnimation.delegate=self
     
     // 5. Add animation to View or Layer, we picked View so self.tableView and not layer which would have been self.tableView.layer
@@ -214,7 +214,10 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
 ## Step 4 Create Name & Delegate For Animation
 ```objective-c
 basicAniamtion.name=@"WhatEverAnimationNameYouWant";
+basicAnimation.delegate=self;
   ```
+#### declare delegate protocol `<POPAnimatorDelegate>`
+
 ### Delegate Methods
 `
 <POPAnimatorDelegate>
