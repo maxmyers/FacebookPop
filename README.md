@@ -51,7 +51,7 @@ basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTi
  POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
   ```
 
-## Step 2 Decide weather you will animate a view property or layer property
+## Step 2 Decide if you will animate a view property or layer property
 
 ### View Properties
 ##### Alpha - kPOPViewAlpha
@@ -143,14 +143,14 @@ POPBasicAnimation*basicAniamtion = [POPBasicAnimation animation];
 ### Layer Properties 
 ##### Color - kPOPLayerBackgroundColor
 ```objective-c
-  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
+ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
  basicAniamtion.toValue= [UIColor redColor];
   ```
   
 ##### Size - kPOPLayerBounds
 ```objective-c
-POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
+ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerBounds];
  basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(0, 0, 90, 90)]; //first 2 values dont matter
   ```
@@ -206,7 +206,7 @@ basicAniamtion.toValue= [NSValue valueWithCGRect:CGRectMake(130, 130, 0, 0)];//l
 #### Note: Property Changes work for all 3 animation types - POPBasicAnimation POPSpringAnimation POPDecayAnimation
 ### Example
 ```objective-c
-  POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
+ POPSpringAnimation*basicAniamtion = [POPSpringAnimation animation];
  basicAniamtion.property = [POPAnimatableProperty propertyWithName: kPOPLayerRotation];
  basicAniamtion.toValue= @(M_PI/4); //2 M_PI is an entire rotation
  [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
