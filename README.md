@@ -12,11 +12,11 @@
      //  anim.toValue = @(1.0);
     //  anim.toValue =  [NSValue valueWithCGRect:CGRectMake(0, 0, 400, 400)];
     //  anim.toValue =  [NSValue valueWithCGSize:CGSizeMake(40, 40)];
-    basicAniamtion.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
+    basicAniamtion.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
   
     // 4. Create Name For Animation & Set Delegate
-     basicAniamtion.name=@"AnyAnimationNameYouWant";
-     basicAnimation.delegate=self
+     basicAniamtion.name = @"AnyAnimationNameYouWant";
+     basicAnimation.delegate = self
     
     // 5. Add animation to View or Layer, we picked View so self.tableView and not layer which would have been self.tableView.layer
     [self.tableView pop_addAnimation:basicAniamtion forKey:@"WhatEverNameYouWant"];
@@ -29,22 +29,22 @@
 ### POPBasicAnimation
  ```objective-c
 POPBasicAnimation *basicAniamtion = [POPBasicAnimation animation];
-basicAniamtion.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]; 
+basicAniamtion.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]; 
 // kCAMediaTimingFunctionLinear  kCAMediaTimingFunctionEaseIn  kCAMediaTimingFunctionEaseOut  kCAMediaTimingFunctionEaseInEaseOut
  ```
  
 ### POPSpringAnimation
   ```objective-c
  POPSpringAnimation *springAnimation = [POPSpringAnimation animation];
- springAnimation.velocity=@(1000);       // change of value units per second
- springAnimation.springBounciness=14;    // value between 0-20 default at 4
- springAnimation.springSpeed=3;     // value between 0-20 default at 4
+ springAnimation.velocity = @(1000);       // change of value units per second
+ springAnimation.springBounciness = 14;    // value between 0-20 default at 4
+ springAnimation.springSpeed = 3;     // value between 0-20 default at 4
   ```
 ### POPDecayAnimation
 ```objective-c
- POPDecayAnimation *decayAnimation=[POPDecayAnimation animation];
- decayAnimation.velocity=@(233); //change of value units per second
- decayAnimation.deceleration=.833; //range of 0 to 1
+ POPDecayAnimation *decayAnimation = [POPDecayAnimation animation];
+ decayAnimation.velocity = @(233); //change of value units per second
+ decayAnimation.deceleration = .833; //range of 0 to 1
   ```
 ### Example
 ```objective-c
