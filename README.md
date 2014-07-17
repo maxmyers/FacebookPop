@@ -129,7 +129,7 @@ POPBasicAnimation *basicAnimation = [POPBasicAnimation animation];
 
 ##### Size - kPOPViewScaleXY
 ```objective-c
-POPBasicAnimation *basicAnimation = [POPBasicAnimation animation];
+ POPBasicAnimation *basicAnimation = [POPBasicAnimation animation];
  basicAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
  basicAnimation.toValue=[NSValue valueWithCGSize:CGSizeMake(3, 2)];
   ```
