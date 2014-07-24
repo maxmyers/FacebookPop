@@ -16,7 +16,7 @@
 
   // 4. Create Name For Animation & Set Delegate
    basicAnimation.name=@"AnyAnimationNameYouWant";
-   basicAnimation.delegate=self
+   basicAnimation.delegate=self;
 
   // 5. Add animation to View or Layer, we picked View so self.tableView and not layer which would have been self.tableView.layer
   [self.tableView pop_addAnimation:basicAnimation forKey:@"WhatEverNameYouWant"];
