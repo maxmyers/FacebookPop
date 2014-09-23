@@ -218,11 +218,15 @@ basicAnimation.delegate=self;
 <POPAnimatorDelegate>
 `
 ```objective-c
-- (void)animatorWillAnimate:(POPAnimator *)animator;
+- (void)pop_animationDidStart:(POPAnimation *)anim;
 ```
 ```objective-c
-- (void)animatorDidAnimate:(POPAnimator *)animator;
+- (void)pop_animationDidStop:(POPAnimation *)anim finished:(BOOL)finished;
 ```
+```objective-c
+- (void)pop_animationDidReachToValue:(POPAnimation *)anim;
+```
+
 
 ### Example
 ```objective-c
