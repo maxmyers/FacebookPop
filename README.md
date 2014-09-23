@@ -246,7 +246,7 @@ basicAnimation.delegate=self;
   POPSpringAnimation *basicAnimation = [POPSpringAnimation animation];
   basicAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
   basicAnimation.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 90, 190)];
-  basicAnimation.name=@"hiiidd";
+  basicAnimation.name=@"SomeAnimationNameYouChoose";
   basicAnimation.delegate=self;
   [self.tableView pop_addAnimation:basicAnimation forKey:@"WhatEverNameYouWant"];
 ```
