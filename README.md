@@ -98,7 +98,7 @@ basicAnimation.toValue= @(0); // scale from 0 to 1
 ##### Color - kPOPViewBackgroundColor
 ```objective-c
 POPSpringAnimation *basicAnimation = [POPSpringAnimation animation];
-basicAnimation.property = [POPAnimatableProperty propertyWithName: kPOPLayerBackgroundColor];
+basicAnimation.property = [POPAnimatableProperty propertyWithName: kPOPViewBackgroundColor];
 basicAnimation.toValue= [UIColor redColor];
 ```
 
